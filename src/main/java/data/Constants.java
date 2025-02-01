@@ -16,6 +16,7 @@ public class Constants {
             EMAIL = "fakeEmail@gmail.com",
             DEPARTMENT = "department",
             PHONE_NUMBER = "5656465665",
+
             UPDATED_NAME = "Ayvazyan",
             UPDATED_MAIL = "fakeEmail@hum.tsu.edu.ge",
             UPDATED_PHONE_NUMBER = "34342341";
