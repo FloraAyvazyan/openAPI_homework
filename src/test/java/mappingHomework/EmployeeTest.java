@@ -19,7 +19,7 @@ public class EmployeeTest {
     @Test
     public void testInsertEmployee3() {
          //**Insert new Employee in DB**:
-        dbMapper().count();
+            dbMapper().count();
             Employee person = new Employee(2, "Flora",
                     "ITC", "123-453-627", "Tbilisi", new BigDecimal(3444), "Fakeemail.com");
             dbMapper().insertEmployee(person);
@@ -76,6 +76,8 @@ public class EmployeeTest {
                 .validateStatus()
                 .validateDeleteMessage();
 
+        List<Employee> emp = dbMapper().selectAll();
+        assertEquals(emp.size(), 0);
 
         List<Employee> AllEmployee = dbMapper().selectAll();
         System.out.println("After deleting");
