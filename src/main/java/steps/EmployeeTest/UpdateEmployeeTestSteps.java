@@ -27,8 +27,8 @@ public class UpdateEmployeeTestSteps {
     public UpdateEmployeeTestSteps prepareEmployeeInfo() {
         ObjectFactory objectFactory = new ObjectFactory();
         employeeInfo = objectFactory.createEmployeeInfo();
-        employeeInfo.setEmployeeId(22);
-        employeeInfo.setName(Constants.UPDATED_NAME);
+        employeeInfo.setEmployeeId(2);
+        employeeInfo.setName("UpdatedWSoap");
         employeeInfo.setEmail(Constants.UPDATED_MAIL);
         try {
             XMLGregorianCalendar xmlDate = DatatypeFactory.newInstance()
